@@ -15,4 +15,27 @@
   src: url(./fonts/Lobster-Regular.ttf);
 }
 
+@font-face {
+  font-family: "playfair";
+  src: url(./fonts/PlayfairDisplay-VariableFont_wght.ttf);
+}
 
+@font-face {
+  font-family: "bebas";
+  src: url(./fonts/BebasNeue-Regular.ttf);
+}
+
+@font-face {
+  font-family: "libre";
+  src: url(./fonts/LibreBaskerville-Regular.ttf);
+}
+
+@font-face {
+  font-family: "libre-bold";
+  src: url(./fonts/LibreBaskerville-Bold.ttf);
+}
+
+
+.card-bg-1{
+  background-image: linear-gradient( 85.2deg,  rgba(33,3,40,1) 7.5%, rgba(65,5,72,1) 88.7% );
+}
