@@ -1,3 +1,18 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.navbar-background {
+  background-image: linear-gradient(
+    111.4deg,
+    rgba(238, 113, 113, 1) 1%,
+    rgba(246, 215, 148, 1) 58%
+  );
+}
+
+@font-face {
+  font-family: "lobster";
+  src: url(./fonts/Lobster-Regular.ttf);
+}
+
+
