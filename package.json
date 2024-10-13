@@ -1,0 +1,15 @@
+{
+  "name": "educationaltechnologies",
+  "version": "1.0.0",
+  "description": "School Project",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "tailwind": "npx tailwindcss -i ./input.css -o ./styles.css --watch"
+  },
+  "author": "İslam Gözhamam",
+  "license": "ISC",
+  "dependencies": {
+    "tailwindcss": "^3.4.13"
+  }
+}

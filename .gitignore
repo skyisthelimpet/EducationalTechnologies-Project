@@ -1,0 +1,24 @@
+# Node modules
+node_modules/
+
+# Tailwind config cache files
+.tailwind-cache/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Optional: OS and editor files
+.DS_Store
+Thumbs.db
+
+# VS Code
+.vscode/
+
+# Optional: Dist or Build folder (if you're building the project and want to exclude the build artifacts)
+dist/
+build/
+
+# Optional: environment variables file
+.env
