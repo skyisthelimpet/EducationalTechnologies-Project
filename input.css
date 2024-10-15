@@ -52,7 +52,7 @@
   width: 200px;
   height: 180px;
   background: lightgrey;
-  border-radius: 30px;
+  border-radius: 0.5rem;
   overflow: hidden;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   transition: all 1s ease-in-out;
