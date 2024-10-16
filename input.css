@@ -150,7 +150,7 @@
 }
 
 .box2::before {
-  background: radial-gradient(circle at 30% 107%, #91e9ff 0%, #00ACEE 90%);
+  background: radial-gradient(circle at 30% 107%, #672096 0%, #ca1212c0 90%);
 }
 
 .box2:hover::before {
@@ -239,7 +239,7 @@
 }
 
 .facebook {
-  background-color: #3b5998;
+  background-color: #df1515;
 }
 
 .facebook svg {
@@ -247,7 +247,7 @@
 }
 
 .facebook:hover svg {
-  fill: #3b5998;
+  fill: #cd1a1a;
 }
 
 .github {
@@ -290,4 +290,9 @@
 
 .w-44 {
   width: 11rem /* 176px */;
+}
+
+
+.ytb.icn{
+  fill: white;
 }
