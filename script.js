@@ -8,3 +8,7 @@ menuButton.addEventListener('change', () => {
     document.getElementById("side-menu").classList.toggle('w-0');
     document.getElementById("side-menu").classList.toggle('w-44'); // we are just toggling width classes of our side menu 
 }); 
+
+document.getElementById("blog-btn").addEventListener('click', ()=>{
+    alert('Coming soon')
+})
