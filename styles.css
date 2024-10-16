@@ -1468,6 +1468,10 @@ video {
   fill: #c13584;
 }
 
+.w-44 {
+  width: 11rem /* 176px */;
+}
+
 .before\:absolute::before {
   content: var(--tw-content);
   position: absolute;

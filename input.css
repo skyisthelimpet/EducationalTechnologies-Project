@@ -287,3 +287,7 @@
 .instagram:hover svg {
   fill: #c13584;
 }
+
+.w-44 {
+  width: 11rem /* 176px */;
+}
