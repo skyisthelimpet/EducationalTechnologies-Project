@@ -23,6 +23,11 @@
 }
 
 @font-face {
+  font-family: "lexend";
+  src: url(./fonts/LexendZetta-VariableFont_wght.ttf);
+}
+
+@font-face {
   font-family: "playfair";
   src: url(./fonts/PlayfairDisplay-VariableFont_wght.ttf);
 }
