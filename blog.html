@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Educational Technologies</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./styles.css">
+
+</head>
+<body class="h-screen transition-all w-screen">
+    
+    <nav class="w-screen h-24 mb-16 shadow-lg shadow-slate-500  navbar-background">
+
+        <div class="flex flex-row justify-between font-[lobster] h-full">
+            
+            <div class="sm:flex hidden items-center">
+                <a class="ml-36 h-fit text-xl hover:border-b-2 text-white grid place-content-center transition-all hover:translate-y-1" href="">main</a>
+                <a class="ml-12 h-fit text-xl hover:border-b-2 text-white grid place-content-center transition-all hover:translate-y-1" href="">info</a>
+                <a class="ml-12 h-fit text-xl hover:border-b-2 text-white grid place-content-center transition-all hover:translate-y-1" href="">projects</a>
+                <a class="ml-12 h-fit text-xl hover:border-b-2 text-white grid place-content-center transition-all hover:translate-y-1" href="">games</a>
+                <a class="ml-12 h-fit text-xl hover:border-b-2 text-white grid place-content-center transition-all hover:translate-y-1" href="">about me</a>
+            </div>
+
+            <label for="nav_bar_icon"
+                class="sm:hidden h-fit mt-auto mb-auto ml-5 z-20 w-9 cursor-pointer flex flex-col items-center justify-center space-y-1.5">
+                <input id="nav_bar_icon" type="checkbox" class="hidden peer" />
+                <div
+                    class="w-2/3 h-1.5  bg-slate-900 rounded-lg transition-all duration-300 origin-right peer-checked:w-full peer-checked:rotate-[-30deg] peer-checked:translate-y-[-5px]">
+                </div>
+                <div
+                    class="w-full h-1.5 bg-slate-900 rounded-lg transition-all duration-300 origin-center peer-checked:rotate-90 peer-checked:translate-x-4">
+                </div>
+                <div
+                    class="w-2/3 h-1.5  bg-slate-900 rounded-lg transition-all duration-300 origin-right peer-checked:w-full peer-checked:rotate-[30deg] peer-checked:translate-y-[5px]">
+                </div>
+            </label>
+
+            <div id="side-menu" class="left-0 transition-all sm:hidden overflow-hidden h-screen duration-300 backdrop-blur-3xl z-10 absolute w-0 w44">
+                
+                <div class="flex flex-col items-center">
+                    <a class="ml-10 mr-10 mt-24 h-fit text-xl hover:border-b-2 w-20 text-black grid place-content-center transition-all hover:translate-y-1" href="/index.html">main</a>
+                    <a class="ml-10 mr-10 mt-12 h-fit text-xl hover:border-b-2 w-20 text-black grid place-content-center transition-all hover:translate-y-1" href="">info</a>
+                    <a class="ml-10 mr-10 mt-12 h-fit text-xl hover:border-b-2 w-20 text-black grid place-content-center transition-all hover:translate-y-1" href="">projects</a>
+                    <a class="ml-10 mr-10 mt-12 h-fit text-xl hover:border-b-2 w-20 text-black grid place-content-center transition-all hover:translate-y-1" href="">games</a>
+                    <a class="ml-10 mr-10 mt-12 h-fit text-xl hover:border-b-2 w-20 text-black grid place-content-center transition-all hover:translate-y-1" href="">about me</a>
+                </div>
+
+            </div>
+
+
+
+            <div class="grid place-content-center">
+                
+              <button
+              type="submit"
+              class="flex sm:mr-36 mr-5 justify-center gap-2 items-center mx-auto shadow-lg shadow-slate-500 text-xl bg-gray-50 backdrop-blur-md lg:font-semibold isolation-auto border-gray-50 before:absolute before:w-full before:transition-all before:duration-700 before:hover:w-full before:-left-full before:hover:left-0 before:rounded-full before:bg-emerald-500 hover:text-gray-50 before:-z-10 before:aspect-square before:hover:scale-150 before:hover:duration-700 relative z-10 px-4 py-2 overflow-hidden border-2 rounded-full group"
+              id="blog-btn"
+            >
+            my blog
+              <svg
+                class="w-8 h-8 justify-end group-hover:rotate-90 group-hover:bg-gray-50 text-gray-50 ease-linear duration-300 rounded-full border border-gray-700 group-hover:border-none p-2 rotate-45"
+                viewBox="0 0 16 19"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M7 18C7 18.5523 7.44772 19 8 19C8.55228 19 9 18.5523 9 18H7ZM8.70711 0.292893C8.31658 -0.0976311 7.68342 -0.0976311 7.29289 0.292893L0.928932 6.65685C0.538408 7.04738 0.538408 7.68054 0.928932 8.07107C1.31946 8.46159 1.95262 8.46159 2.34315 8.07107L8 2.41421L13.6569 8.07107C14.0474 8.46159 14.6805 8.46159 15.0711 8.07107C15.4616 7.68054 15.4616 7.04738 15.0711 6.65685L8.70711 0.292893ZM9 18L9 1H7L7 18H9Z"
+                  class="fill-gray-800 group-hover:fill-gray-800"
+                ></path>
+              </svg>
+            </button>
+
+                
+
+            </div>
+
+        </div>
+
+
+    </nav>
+
+        <div id="main" class=" flex flex-col items-center  md:pl-36 md:pr-36 md:flex-col w-screen h-screen">
+
+            <div id="postcard" class="bg-slate-800 shadow-2xl shadow-black p-5 w-96 h-fit rounded-lg">
+
+                <h1 class="text-white">Test</h1>
+                <p class="text-gray-400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, nemo et. Vero unde explicabo sequi sed provident optio, excepturi recusandae ab ratione nulla beatae necessitatibus, neque nemo quaerat fugit alias.</p>
+                           
+            </div>
+            
+        </div>
+
+
+
+
+
+
+
+
+
+        <footer class="sm:fixed mt-20 grid font-[lobster] text-white navbar-background rounded-tl-md rounded-tr-md place-content-center bottom-0 w-screen h-10">
+            <h1 class="tracking-wide">made with ❤️ by <a class="border-b-2  border-blue-500 text-blue-500" href="https://www.instagram.com/damnimessedupwegottagobald_/">me</a> </h1>
+        </footer>
+
+    <script type="module" src="./script.js"></script>
+</body>
+</html> 
