@@ -17,6 +17,11 @@
 
 }
 
+.main-bg{
+  background-image: url('./images/background.jpeg');
+  background-size: cover;
+}
+
 @font-face {
   font-family: "lobster";
   src: url(./fonts/Lobster-Regular.ttf);
