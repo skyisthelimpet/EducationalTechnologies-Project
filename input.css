@@ -3,19 +3,12 @@
 @tailwind utilities;
 
 .navbar-background {
-  /* background-image: linear-gradient(
-    111.4deg,
-    rgba(238, 113, 113, 1) 1%,
-    rgba(246, 215, 148, 1) 58%
-  ); */
-
-  background-image: linear-gradient( 58.2deg,  rgb(40, 92, 212) -3%, rgb(171, 53, 163) 49.3%, rgb(255, 205, 112) 97.7% );
-
-
-
-  
-
+  background-image: url("./images/banner.png");
+  background-position: 0 0 0 0;
 }
+
+
+
 
 .main-bg{
   background-image: url('./images/background.jpeg');
@@ -57,9 +50,15 @@
   src: url(./fonts/Merriweather-Regular.ttf);
 }
 
+@font-face {
+  font-family: "uncial";
+  src: url(./fonts/UncialAntiqua-Regular.ttf);
+}
+
+
 
 .card-bg-1{
-  background-image: radial-gradient( circle 918px at 13.1% 25.5%,  rgba(249,107,107,1) 0%, rgba(247,231,172,1) 48.9%, rgba(173,247,172,1) 90% );
+  background-image: linear-gradient( 111.4deg,  rgba(7,7,9,1) 6.5%, rgba(27,24,113,1) 93.2% );
 }
 
 
@@ -68,19 +67,25 @@
   position: relative;
   width: 200px;
   height: 180px;
-  background: lightgrey;
+  
   border-radius: 0.5rem;
   overflow: hidden;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  
   transition: all 1s ease-in-out;
-  border: 2px solid rgb(3, 0, 0);
+  
+}
+
+.about-me-bg{
+  background-image: url("./images/geralt2.PNG");
+  background-size: cover;
+  background-position-x: center;
 }
 
 .background {
   position: absolute;
   inset: 0;
   background-color: #4158D0;
-  background-image: linear-gradient( 111.4deg,  rgba(238,113,113,1) 1%, rgba(246,215,148,1) 58% );
+  background-image: radial-gradient( circle 811px at 17.3% 40.2%,  rgba(16,12,37,0.91) 33.4%, rgba(14,1,81,0.85) 90% );
 }
 
 .logo {
