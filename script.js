@@ -4,6 +4,7 @@ const menuButton = document.getElementById("nav_bar_icon");
 
 window.onload = function () {
     menuButton.checked = false; //TO BE SURE THAT ICON IS RESET AFTER REFRESH
+    
 };
 
 menuButton.addEventListener('change', () => {
@@ -12,7 +13,7 @@ menuButton.addEventListener('change', () => {
 });
 
 document.getElementById("blog-btn").addEventListener('click', () => {
-    alert('Coming soon')
+    window.location.href = 'https://awollrur.wordpress.com/';
 })
 
 
@@ -25,7 +26,7 @@ async function fetchTodaysFact() {
         });
 
         if (!response.ok) {
-            throw new Error(`HTTP error! Status: ${response.status}`);
+            throw new Error(`eror: ${response.status}`);
         }
 
         const data = await response.json();
@@ -43,15 +44,15 @@ async function fetchTodaysFact() {
 }
 
 
-function displayFact(data) {
+// function displayFact(data) {
 
-    const factElement = document.getElementById('fact-text');
-    if (factElement) {
-        factElement.textContent = data.text;
-    }
-}
+//     const factElement = document.getElementById('fact-text');
+//     if (factElement) {
+//         factElement.textContent = data.text;
+//     }
+// }
 
-window.addEventListener('load', fetchTodaysFact);
+// window.addEventListener('load', fetchTodaysFact);
 
 
 
@@ -62,7 +63,7 @@ async function fetchWordData() {
     try {
         const response = await fetch(apiUrl);
         if (!response.ok) {
-            throw new Error(`HTTP error! Status: ${response.status}`);
+            throw new Error(`Error: ${response.status}`);
         }
 
         const data = await response.json();
@@ -131,7 +132,7 @@ document.addEventListener('DOMContentLoaded', () => {
         weightFactor: 5,
         color: 'random-dark',
         rotateRatio: 0.5,
-        backgroundColor: '#f8f8f8'
+        backgroundColor: '#0f172a'
     });
 });
 
@@ -227,7 +228,7 @@ document.addEventListener('DOMContentLoaded', () => {
         return 'neither';
     }
 
-    // Event listener for checking relationship
+
     document.getElementById('check-relationship').addEventListener('click', () => {
         const word1 = document.getElementById('word1-input').value.toLowerCase();
         const word2 = document.getElementById('word2-input').value.toLowerCase();
