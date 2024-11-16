@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Educational Technologies</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../styles.css">
+
+</head>
+<body class="h-screen bg-[#0f172a] transition-all overflow-x-hidden w-screen">
+    
+    <nav class="w-screen h-24 shadow-lg navbar-background">
+
+        <div class="flex flex-row justify-between font-[uncial] h-full">
+            
+            <div class="sm:flex hidden items-center">
+                <a class="ml-36 h-fit text-lg hover:border-b-2 text-white grid place-content-center transition-all hover:translate-y-1" href="../index.html">main</a>
+                <a class="ml-12 h-fit text-lg hover:border-b-2 text-white grid place-content-center transition-all hover:translate-y-1" href="../read.html">read</a>
+                <a class="ml-12 h-fit text-lg hover:border-b-2 text-white grid place-content-center transition-all hover:translate-y-1" href="">listen</a>
+                <a class="ml-12 h-fit text-lg hover:border-b-2 text-white grid place-content-center transition-all hover:translate-y-1" href="../games.html">games</a>
+                <a class="ml-12 h-fit text-lg hover:border-b-2 text-white grid place-content-center transition-all hover:translate-y-1" href="../aboutme.html">about me</a>
+            </div>
+
+            <label for="nav_bar_icon"
+                class="sm:hidden h-fit mt-auto mb-auto ml-5 z-20 w-9 cursor-pointer flex flex-col items-center justify-center space-y-1.5">
+                <input id="nav_bar_icon" type="checkbox" class="hidden peer" />
+                <div
+                    class="w-2/3 h-1.5  bg-slate-900 rounded-lg transition-all duration-300 origin-right peer-checked:w-full peer-checked:rotate-[-30deg] peer-checked:translate-y-[-5px]">
+                </div>
+                <div
+                    class="w-full h-1.5 bg-slate-900 rounded-lg transition-all duration-300 origin-center peer-checked:rotate-90 peer-checked:translate-x-4">
+                </div>
+                <div
+                    class="w-2/3 h-1.5  bg-slate-900 rounded-lg transition-all duration-300 origin-right peer-checked:w-full peer-checked:rotate-[30deg] peer-checked:translate-y-[5px]">
+                </div>
+            </label>
+
+            <div id="side-menu" class="left-0 transition-all sm:hidden overflow-hidden h-screen duration-300 backdrop-blur-3xl z-10 absolute w-0 w44">
+                
+                <div class="flex flex-col items-center">
+                    <a class="ml-10 mr-10 mt-24 h-fit text-xl hover:border-b-2 w-20 text-black grid place-content-center transition-all hover:translate-y-1" href="./index.html">main</a>
+                    <a class="ml-10 mr-10 mt-12 h-fit text-xl hover:border-b-2 w-20 text-black grid place-content-center transition-all hover:translate-y-1" href="">info</a>
+                    <a class="ml-10 mr-10 mt-12 h-fit text-xl hover:border-b-2 w-20 text-black grid place-content-center transition-all hover:translate-y-1" href="">projects</a>
+                    <a class="ml-10 mr-10 mt-12 h-fit text-xl hover:border-b-2 w-20 text-black grid place-content-center transition-all hover:translate-y-1" href="./games.html">games</a>
+                    <a class="ml-10 mr-10 mt-12 h-fit text-xl hover:border-b-2 w-20 text-black grid place-content-center transition-all hover:translate-y-1" href="./aboutme.html">about me</a>
+                </div>
+
+            </div>
+
+
+
+            <div class="grid place-content-center">
+                
+              <button
+              type="submit"
+              class="flex sm:mr-36 mr-5 justify-center gap-2 items-center mx-auto shadow-lg shadow-slate-500 text-lg bg-gray-50 backdrop-blur-md lg:font-semibold isolation-auto border-gray-50 before:absolute before:w-full before:transition-all before:duration-700 before:hover:w-full before:-left-full before:hover:left-0 before:rounded-full before:bg-emerald-500 hover:text-gray-50 before:-z-10 before:aspect-square before:hover:scale-150 before:hover:duration-700 relative z-10 px-4 py-2 overflow-hidden border-2 rounded-full group"
+              id="blog-btn"
+            >
+            my blog
+              <svg
+                class="w-8 h-8 justify-end group-hover:rotate-90 group-hover:bg-gray-50 text-gray-50 ease-linear duration-300 rounded-full border border-gray-700 group-hover:border-none p-2 rotate-45"
+                viewBox="0 0 16 19"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M7 18C7 18.5523 7.44772 19 8 19C8.55228 19 9 18.5523 9 18H7ZM8.70711 0.292893C8.31658 -0.0976311 7.68342 -0.0976311 7.29289 0.292893L0.928932 6.65685C0.538408 7.04738 0.538408 7.68054 0.928932 8.07107C1.31946 8.46159 1.95262 8.46159 2.34315 8.07107L8 2.41421L13.6569 8.07107C14.0474 8.46159 14.6805 8.46159 15.0711 8.07107C15.4616 7.68054 15.4616 7.04738 15.0711 6.65685L8.70711 0.292893ZM9 18L9 1H7L7 18H9Z"
+                  class="fill-gray-800 group-hover:fill-gray-800"
+                ></path>
+              </svg>
+            </button>
+
+                
+
+            </div>
+
+        </div>
+
+
+    </nav>
+
+
+
+    <div id="main" class=" bg-slate-800 font-[libre] p-4 rounded-lg border border-slate-600  mt-20 mx-auto w-full max-w-4xl">
+
+        <h1 class="text-4xl font-bold text-white mb-4">The Role of Video Games in the Classroom</h1>
+
+  <p class="text-slate-300 mb-4">
+    When I was a teacher, I was always on the lookout for materials that my students would find interesting, relevant, and engaging. I was also a fan of activities that wouldn’t bring me untold misery or make me regret my life choices! The idea of using video games in the classroom used to simultaneously fill me with enthusiasm and dread.
+  </p>
+
+  <p class="text-slate-300 mb-4">
+    The motivational aspect is obvious. And, as a lifelong gamer myself, I’m aware that video games can develop beneficial learning skills such as perseverance, curiosity, and problem-solving. But how do I integrate them into my classroom in practice? By using video games with my students, will I just be making my life more difficult for no good reason? The good news is using video games in class doesn’t have to be a headache because there’s so much flexibility when it comes to the approaches you can take.
+  </p>
+
+  <p class="text-slate-300 mb-4">
+    I work as part of the team at Cambridge University Press & Assessment who create the Adventures in English with Cambridge video game series, designed to support students at beginner, elementary, and lower intermediate levels (A1, A2, and B1 on the CEFR). Here is an infographic to show some of the options available to you in using video games with your class:
+  </p>
+
+  <h2 class="text-3xl font-semibold text-white mt-8 mb-4">Game Example 1: Crossy Road</h2>
+
+  <h3 class="text-2xl font-semibold text-white mt-6 mb-4">Approach: One device per class</h3>
+  <p class="text-slate-300 mb-4">
+    <strong>PEGI rating:</strong> 3+ <br />
+    <strong>Time:</strong> 45 mins approx.
+  </p>
+  <p class="text-slate-300 mb-4">
+    <strong>You will need:</strong>
+  </p>
+  <ul class="list-disc list-inside text-slate-300 mb-4">
+    <li>A touchscreen that can be screencast onto a projector, or simply a single touchscreen device.</li>
+    <li>A copy of the game. It’s available on the Google Play and App Store.</li>
+  </ul>
+
+  <p class="text-slate-300 mb-4">
+    <strong>About the game:</strong> In Crossy Road, you are a chicken! Your job is to cross as many roads as you can without getting squashed by the traffic. Don’t worry – the squashing animations are very cute!
+  </p>
+
+  <h3 class="text-2xl font-semibold text-white mt-6 mb-4">Lesson Plan</h3>
+  <p class="text-slate-300 mb-4">
+    Start with a lead-in activity about jokes. Do the students know any jokes in English? You can introduce classics like "What kind of key do you need to open a banana?" (Answer: A monkey!) or "Why did the chicken cross the road?" to set the context.
+  </p>
+  <p class="text-slate-300 mb-4">
+    Introduce the game, teaching phrases like "look both ways before crossing the road," "stop when the light is red," and "go when the light is green." Students can practice miming these actions before playing.
+  </p>
+
+  <p class="text-slate-300 mb-4">
+    Demonstrate the game on a screencast-enabled touchscreen or use a rolling pair system where students take turns. The class can cheer or comment with phrases like "Be careful!" or "Cars are very fast!" Record each student’s score and find the winner.
+  </p>
+
+  <h3 class="text-2xl font-semibold text-white mt-6 mb-4">Extension Ideas</h3>
+  <p class="text-slate-300 mb-4">
+    Add more activities that build on road safety language, animal vocabulary, or joke creation. For example, ask students, "Why did the duck/giraffe cross the road?" and let them create their own punchlines.
+  </p>
+
+  <h2 class="text-3xl font-semibold text-white mt-8 mb-4">Game Example 2: Gormi’s Winter Wonderland</h2>
+
+  <h3 class="text-2xl font-semibold text-white mt-6 mb-4">Approach: In small groups or pairs</h3>
+  <p class="text-slate-300 mb-4">
+    <strong>PEGI rating:</strong> 7+ <br />
+    <strong>Time:</strong> 45 mins approx.
+  </p>
+  <p class="text-slate-300 mb-4">
+    <strong>You will need:</strong>
+  </p>
+  <ul class="list-disc list-inside text-slate-300 mb-4">
+    <li>Devices for small groups/pairs that support Minecraft Bedrock edition.</li>
+    <li>Copies of the game. Find more information about it online.</li>
+  </ul>
+
+  <p class="text-slate-300 mb-4">
+    <strong>About the game:</strong> Gormi’s Winter Wonderland focuses on cold weather and winter activities. Students help Gormi host a party by solving puzzles, exploring different rooms, and escaping a massive igloo.
+  </p>
+
+  <h3 class="text-2xl font-semibold text-white mt-6 mb-4">Lesson Plan</h3>
+  <p class="text-slate-300 mb-4">
+    Students work in pairs or small groups, taking turns playing the game and reading dialogue. Pre-teach key phrases like "What’s over there?" or "We have to go this way." Students can report back to the class about what they discovered in the game.
+  </p>
+
+  <h3 class="text-2xl font-semibold text-white mt-6 mb-4">Extension Ideas</h3>
+  <p class="text-slate-300 mb-4">
+    Break the game into segments for multiple lessons. Encourage students to collaborate on solving puzzles and using in-game vocabulary.
+  </p>
+
+  <h2 class="text-3xl font-semibold text-white mt-8 mb-4">Final Thoughts</h2>
+  <p class="text-slate-300 mb-4">
+    Incorporating video games into the classroom can provide engaging, memorable lessons that foster language skills like speaking, listening, reading, and writing. By carefully selecting games and using targeted strategies, educators can make learning enjoyable and effective.
+  </p>
+  <p class="text-slate-300 mb-4">
+    If you’d like to know more, check out the 15-minute talk given at IATEFL 2019, which debunks myths about video games and highlights their benefits for language learning.
+  </p>
+    
+
+
+    </div>
+
+
+
+
+    <footer class="mt-20 grid font-[lobster] text-white bg-slate-800 rounded-tl-md rounded-tr-md place-content-center bottom-0 w-screen h-10">
+        <h1 class="tracking-wide">made with ❤️ by <a class="border-b-2  border-blue-500 text-blue-500" href="https://www.instagram.com/damnimessedupwegottagobald_/">me</a> </h1>
+    </footer>
+
+
+    <script src="./script.js"></script> 
+</body>
+</html> 

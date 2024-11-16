@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Educational Technologies</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../styles.css">
+
+</head>
+<body class="h-screen bg-[#0f172a] transition-all overflow-x-hidden w-screen">
+    
+    <nav class="w-screen h-24 shadow-lg navbar-background">
+
+        <div class="flex flex-row justify-between font-[uncial] h-full">
+            
+            <div class="sm:flex hidden items-center">
+                <a class="ml-36 h-fit text-lg hover:border-b-2 text-white grid place-content-center transition-all hover:translate-y-1" href="../index.html">main</a>
+                <a class="ml-12 h-fit text-lg hover:border-b-2 text-white grid place-content-center transition-all hover:translate-y-1" href="../read.html">read</a>
+                <a class="ml-12 h-fit text-lg hover:border-b-2 text-white grid place-content-center transition-all hover:translate-y-1" href="">listen</a>
+                <a class="ml-12 h-fit text-lg hover:border-b-2 text-white grid place-content-center transition-all hover:translate-y-1" href="../games.html">games</a>
+                <a class="ml-12 h-fit text-lg hover:border-b-2 text-white grid place-content-center transition-all hover:translate-y-1" href="../aboutme.html">about me</a>
+            </div>
+
+            <label for="nav_bar_icon"
+                class="sm:hidden h-fit mt-auto mb-auto ml-5 z-20 w-9 cursor-pointer flex flex-col items-center justify-center space-y-1.5">
+                <input id="nav_bar_icon" type="checkbox" class="hidden peer" />
+                <div
+                    class="w-2/3 h-1.5  bg-slate-900 rounded-lg transition-all duration-300 origin-right peer-checked:w-full peer-checked:rotate-[-30deg] peer-checked:translate-y-[-5px]">
+                </div>
+                <div
+                    class="w-full h-1.5 bg-slate-900 rounded-lg transition-all duration-300 origin-center peer-checked:rotate-90 peer-checked:translate-x-4">
+                </div>
+                <div
+                    class="w-2/3 h-1.5  bg-slate-900 rounded-lg transition-all duration-300 origin-right peer-checked:w-full peer-checked:rotate-[30deg] peer-checked:translate-y-[5px]">
+                </div>
+            </label>
+
+            <div id="side-menu" class="left-0 transition-all sm:hidden overflow-hidden h-screen duration-300 backdrop-blur-3xl z-10 absolute w-0 w44">
+                
+                <div class="flex flex-col items-center">
+                    <a class="ml-10 mr-10 mt-24 h-fit text-xl hover:border-b-2 w-20 text-black grid place-content-center transition-all hover:translate-y-1" href="../index.html">main</a>
+                    <a class="ml-10 mr-10 mt-12 h-fit text-xl hover:border-b-2 w-20 text-black grid place-content-center transition-all hover:translate-y-1" href="">read</a>
+                    <a class="ml-10 mr-10 mt-12 h-fit text-xl hover:border-b-2 w-20 text-black grid place-content-center transition-all hover:translate-y-1" href="">listen</a>
+                    <a class="ml-10 mr-10 mt-12 h-fit text-xl hover:border-b-2 w-20 text-black grid place-content-center transition-all hover:translate-y-1" href="../games.html">games</a>
+                    <a class="ml-10 mr-10 mt-12 h-fit text-xl hover:border-b-2 w-20 text-black grid place-content-center transition-all hover:translate-y-1" href="../aboutme.html">about me</a>
+                </div>
+
+            </div>
+
+
+
+            <div class="grid place-content-center">
+                
+              <button
+              type="submit"
+              class="flex sm:mr-36 mr-5 justify-center gap-2 items-center mx-auto shadow-lg shadow-slate-500 text-lg bg-gray-50 backdrop-blur-md lg:font-semibold isolation-auto border-gray-50 before:absolute before:w-full before:transition-all before:duration-700 before:hover:w-full before:-left-full before:hover:left-0 before:rounded-full before:bg-emerald-500 hover:text-gray-50 before:-z-10 before:aspect-square before:hover:scale-150 before:hover:duration-700 relative z-10 px-4 py-2 overflow-hidden border-2 rounded-full group"
+              id="blog-btn"
+            >
+            my blog
+              <svg
+                class="w-8 h-8 justify-end group-hover:rotate-90 group-hover:bg-gray-50 text-gray-50 ease-linear duration-300 rounded-full border border-gray-700 group-hover:border-none p-2 rotate-45"
+                viewBox="0 0 16 19"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M7 18C7 18.5523 7.44772 19 8 19C8.55228 19 9 18.5523 9 18H7ZM8.70711 0.292893C8.31658 -0.0976311 7.68342 -0.0976311 7.29289 0.292893L0.928932 6.65685C0.538408 7.04738 0.538408 7.68054 0.928932 8.07107C1.31946 8.46159 1.95262 8.46159 2.34315 8.07107L8 2.41421L13.6569 8.07107C14.0474 8.46159 14.6805 8.46159 15.0711 8.07107C15.4616 7.68054 15.4616 7.04738 15.0711 6.65685L8.70711 0.292893ZM9 18L9 1H7L7 18H9Z"
+                  class="fill-gray-800 group-hover:fill-gray-800"
+                ></path>
+              </svg>
+            </button>
+
+                
+
+            </div>
+
+        </div>
+
+
+    </nav>
+
+
+
+    <div id="main" class=" bg-slate-800 font-[libre] p-4 rounded-lg border border-slate-600  mt-20 mx-auto w-full max-w-4xl">
+
+        <h1 class="text-4xl text-white font-bold mb-4">How Video Games Are Revolutionizing English Language Learning</h1>
+
+  <p class="text-slate-300 mb-4">
+    In this rapidly developing digital era, video games have played much more than their role as a mere form of entertainment.
+  </p>
+  <p class="text-slate-300 mb-4">
+    They have emerged as a powerful catalyst and tool for English language learning in recent years. Unlike traditional classroom methods, digital games provide a vibrant, interactive, and thoroughly enjoyable platform for English language learners. This fusion of fun and learning has revolutionized language education, making it more accessible and appealing to a global audience.
+  </p>
+  <p class="text-slate-300 mb-4">
+    Video games revolutionize English learning by providing immersive, interactive experiences. They enhance vocabulary, listening, reading, and writing skills and offer cultural insights. Engaging and fun, they motivate learners and facilitate global communication, redefining traditional language education.
+  </p>
+
+  <h2 class="text-3xl text-white font-semibold mt-8 mb-4">The Power of Video Games in English Learning</h2>
+
+  <p class="text-slate-300 mb-4">
+    I am an experienced English as a Second Language (ESL) teacher and a video game enthusiast! I find games and gamifying the learning experience to be an incredibly effective way to keep students engaged and able to absorb more information. This article aims to unfold the various layers through which video games are making significant strides in teaching English, thereby changing the face of language learning across the world.
+  </p>
+  <p class="text-slate-300 mb-4">Controllers at the ready; let’s jump in!</p>
+
+  <h2 class="text-3xl text-white font-semibold mt-8 mb-4">1. English Immersion</h2>
+
+  <p class="text-slate-300 mb-4">
+    Video games, especially those crafted in the hearts of English-speaking cultures, offer a rich, immersive environment in which players from around the globe can explore the depths of the English language. Gamers frequently find themselves interacting with these digital worlds in English, either due to the absence of localized versions or to experience the game’s authentic storyline and nuances.
+  </p>
+  <p class="text-slate-300 mb-4">
+    This deep immersion acts as a crucial catalyst in language learning. It provides a seamless, practical application of English within a captivating virtual world, acquiring language skills as a more natural and intuitive process. This allows gamers to work on their English skills without feeling like a chore, boosting retention.
+  </p>
+
+  <h2 class="text-3xl text-white font-semibold mt-8 mb-4">2. Interactive Learning Experience</h2>
+
+  <p class="text-slate-300 mb-4">
+    The dynamic interactivity that video games offer distinctly sets them apart from traditional language learning tools. In these virtual worlds, players are not just passive recipients of information; they actively engage with the language. They’re immersed in a realm where understanding and responding to English instructions, dialogues, and intricate storylines are all part of the adventure.
+  </p>
+
+  <h2 class="text-3xl text-white font-semibold mt-8 mb-4">3. Access to a Global Community</h2>
+
+  <p class="text-slate-300 mb-4">
+    Online multiplayer games offer vibrant platforms for interacting with people around the world, connecting players from a diverse range of backgrounds. English naturally emerges as the lingua franca in this melting pot of cultures, bridging communication gaps and forging connections among players.
+  </p>
+
+  <h2 class="text-3xl text-white font-semibold mt-8 mb-4">4. Vocabulary Expansion</h2>
+
+  <p class="text-slate-300 mb-4">
+    The vast array of genres available in the gaming world offers players a unique opportunity to significantly expand their vocabulary on many interesting topics. Players encounter a broad spectrum of language from the intricate jargon of fantasy worlds like Skyrim to the streetwise slang of modern settings in GTA. This exposure goes well beyond the scope of traditional language courses.
+  </p>
+
+  <h2 class="text-3xl text-white font-semibold mt-8 mb-4">5. Improved Listening and Comprehension</h2>
+
+  <p class="text-slate-300 mb-4">
+    Video games, with their awesome range of voice acting, encompass a multitude of accents and dialects, which serve as excellent tools for enhancing listening and comprehension skills in English. This auditory exposure is crucial in language learning, as it trains the ear to recognize and understand spoken English’s diverse nuances and phonetics.
+  </p>
+
+  <h2 class="text-3xl text-white font-semibold mt-8 mb-4">6. Reading and Writing Practice</h2>
+
+  <p class="text-slate-300 mb-4">
+    In the realm of video games, reading and writing in English can take on a very interactive form. Players often encounter in-game texts, ranging from in-depth conversations to detailed instructions, making reading an important part of the gaming experience.
+  </p>
+
+  <h2 class="text-3xl text-white font-semibold mt-8 mb-4">7. Cultural Exposure</h2>
+
+  <p class="text-slate-300 mb-4">
+    Video games serve as a window to the cultural landscapes of English-speaking countries, weaving in elements that offer players more than just language skills. They provide a rich context, essential for truly understanding the nuances of the English language. Through narratives, settings, and characters, players experience cultural references, idioms, and social norms that are integral to English-speaking societies.
+  </p>
+
+  <h2 class="text-3xl text-white font-semibold mt-8 mb-4">8. Motivation and Enjoyment</h2>
+
+  <p class="text-slate-300 mb-4">
+    Video games’ intrinsic fun and captivation both play a pivotal role in sustaining learner motivation in learning English. Unlike traditional methods, which can sometimes be monotonous or challenging to stay engaged with, video games offer an enjoyable and stimulating learning environment.
+  </p>
+    
+
+
+    </div>
+
+
+
+
+    <footer class="mt-20 grid font-[lobster] text-white bg-slate-800 rounded-tl-md rounded-tr-md place-content-center bottom-0 w-screen h-10">
+        <h1 class="tracking-wide">made with ❤️ by <a class="border-b-2  border-blue-500 text-blue-500" href="https://www.instagram.com/damnimessedupwegottagobald_/">me</a> </h1>
+    </footer>
+
+
+    <script src="./script.js"></script> 
+</body>
+</html> 

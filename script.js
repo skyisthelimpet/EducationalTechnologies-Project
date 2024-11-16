@@ -7,6 +7,8 @@ window.onload = function () {
     
 };
 
+
+
 menuButton.addEventListener('change', () => {
     document.getElementById("side-menu").classList.toggle('w-0');
     document.getElementById("side-menu").classList.toggle('w-44'); // we are just toggling width classes of our side menu 
@@ -238,11 +240,11 @@ document.addEventListener('DOMContentLoaded', () => {
             const relationship = checkRelationship(word1, word2);
 
             if (relationship === 'synonym') {
-                resultDiv.innerHTML = `<p>${word1} and ${word2} are synonyms.</p>`;
+                resultDiv.innerHTML = `<p> <span class="text-green-500"> Correct! </span> ${word1} and ${word2} are synonyms.</p>`;
             } else if (relationship === 'antonym') {
-                resultDiv.innerHTML = `<p>${word1} and ${word2} are antonyms.</p>`;
+                resultDiv.innerHTML = `<p> <span class="text-green-500"> Correct! </span> ${word1} and ${word2} are antonyms.</p>`;
             } else {
-                resultDiv.innerHTML = `<p>${word1} and ${word2} are neither synonyms nor antonyms.</p>`;
+                resultDiv.innerHTML = `<p> <span class="text-red-500"> False! </span> ${word1} and ${word2} are neither synonyms nor antonyms.</p>`;
             }
         } else {
             resultDiv.innerHTML = `<p>Please enter valid words from the word cloud.</p>`;
