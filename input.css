@@ -192,7 +192,7 @@
 }
 
 .box3::before {
-  background: radial-gradient(circle at 30% 107%, #969fff 0%, #b349ff 90%);
+  background: radial-gradient(circle at 30% 107%, #091ad6 0%, #0ba7bc 90%);
 }
 
 .box3:hover::before {
