@@ -1,3 +1,6 @@
+if (/Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent)) {
+    window.location.href = "./notsupported.html";
+  }
 
 const menuButton = document.getElementById("nav_bar_icon");
 
