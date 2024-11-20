@@ -6,7 +6,7 @@ const menuButton = document.getElementById("nav_bar_icon");
 
 
 window.onload = function () {
-    menuButton.checked = false; //TO BE SURE THAT ICON IS RESET AFTER REFRESH
+    menuButton.checked = false;
 
 };
 
@@ -14,7 +14,7 @@ window.onload = function () {
 
 menuButton.addEventListener('change', () => {
     document.getElementById("side-menu").classList.toggle('w-0');
-    document.getElementById("side-menu").classList.toggle('w-44'); // we are just toggling width classes of our side menu 
+    document.getElementById("side-menu").classList.toggle('w-44'); 
 });
 
 document.getElementById("blog-btn").addEventListener('click', () => {
@@ -205,7 +205,7 @@ document.addEventListener('DOMContentLoaded', () => {
         "rival": { "synonyms": ["enemy", "foe"], "antonyms": ["friend", "companion", "buddy", "ally"] }
     };
     
-    // Function to generate a complete data structure with bidirectional relationships
+    
     function generateFullWordData(wordData) {
         const fullData = {};
     
@@ -216,13 +216,13 @@ document.addEventListener('DOMContentLoaded', () => {
     
             const { synonyms, antonyms } = wordData[word];
     
-            // Add synonyms and antonyms for the current word
+           
             synonyms.forEach(synonym => {
                 if (!fullData[word].synonyms.includes(synonym)) {
                     fullData[word].synonyms.push(synonym);
                 }
     
-                // Ensure the synonym word also has this word in its synonyms
+              w
                 if (!fullData[synonym]) {
                     fullData[synonym] = { synonyms: [], antonyms: [] };
                 }
@@ -236,7 +236,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     fullData[word].antonyms.push(antonym);
                 }
     
-                // Ensure the antonym word also has this word in its antonyms
+              
                 if (!fullData[antonym]) {
                     fullData[antonym] = { synonyms: [], antonyms: [] };
                 }
@@ -249,22 +249,22 @@ document.addEventListener('DOMContentLoaded', () => {
         return fullData;
     }
     
-    // Generate the full word data with bidirectional relationships
+    
     const wordData = generateFullWordData(initialWordData);
     
     function checkRelationship(word1, word2) {
-        // Normalize input words to lowercase
+       
         word1 = word1.toLowerCase();
         word2 = word2.toLowerCase();
     
-        // Check if both words exist in the dictionary
+     
         if (wordData[word1] && wordData[word2]) {
-            // Check if word2 is a synonym of word1
+ 
             if (wordData[word1].synonyms.includes(word2)) {
                 return 'synonym';
             }
     
-            // Check if word2 is an antonym of word1
+          
             if (wordData[word1].antonyms.includes(word2)) {
                 return 'antonym';
             }
