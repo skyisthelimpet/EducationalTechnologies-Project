@@ -1,6 +1,6 @@
 if (/Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent)) {
     window.location.href = "./notsupported.html";
-  }
+}
 
 const menuButton = document.getElementById("nav_bar_icon");
 
@@ -14,7 +14,7 @@ window.onload = function () {
 
 menuButton.addEventListener('change', () => {
     document.getElementById("side-menu").classList.toggle('w-0');
-    document.getElementById("side-menu").classList.toggle('w-44'); 
+    document.getElementById("side-menu").classList.toggle('w-44');
 });
 
 document.getElementById("blog-btn").addEventListener('click', () => {
@@ -97,13 +97,6 @@ function displayWordData(wordData) {
 }
 
 window.addEventListener('load', fetchWordData);
-
-
-
-
-
-
-
 
 
 
@@ -204,25 +197,25 @@ document.addEventListener('DOMContentLoaded', () => {
         "foe": { "synonyms": ["enemy", "rival"], "antonyms": ["friend", "companion", "buddy", "ally"] },
         "rival": { "synonyms": ["enemy", "foe"], "antonyms": ["friend", "companion", "buddy", "ally"] }
     };
-    
-    
+
+
     function generateFullWordData(wordData) {
         const fullData = {};
-    
+
         for (const word in wordData) {
             if (!fullData[word]) {
                 fullData[word] = { synonyms: [], antonyms: [] };
             }
-    
+
             const { synonyms, antonyms } = wordData[word];
-    
-           
+
+
             synonyms.forEach(synonym => {
                 if (!fullData[word].synonyms.includes(synonym)) {
                     fullData[word].synonyms.push(synonym);
                 }
-    
-              w
+
+                w
                 if (!fullData[synonym]) {
                     fullData[synonym] = { synonyms: [], antonyms: [] };
                 }
@@ -230,13 +223,13 @@ document.addEventListener('DOMContentLoaded', () => {
                     fullData[synonym].synonyms.push(word);
                 }
             });
-    
+
             antonyms.forEach(antonym => {
                 if (!fullData[word].antonyms.includes(antonym)) {
                     fullData[word].antonyms.push(antonym);
                 }
-    
-              
+
+
                 if (!fullData[antonym]) {
                     fullData[antonym] = { synonyms: [], antonyms: [] };
                 }
@@ -245,34 +238,34 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
             });
         }
-    
+
         return fullData;
     }
-    
-    
+
+
     const wordData = generateFullWordData(initialWordData);
-    
+
     function checkRelationship(word1, word2) {
-       
+
         word1 = word1.toLowerCase();
         word2 = word2.toLowerCase();
-    
-     
+
+
         if (wordData[word1] && wordData[word2]) {
- 
+
             if (wordData[word1].synonyms.includes(word2)) {
                 return 'synonym';
             }
-    
-          
+
+
             if (wordData[word1].antonyms.includes(word2)) {
                 return 'antonym';
             }
         }
-    
+
         return 'neither';
     }
-    
+
 
 
 
