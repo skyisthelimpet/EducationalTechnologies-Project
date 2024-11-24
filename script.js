@@ -215,7 +215,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     fullData[word].synonyms.push(synonym);
                 }
 
-                w
+                
                 if (!fullData[synonym]) {
                     fullData[synonym] = { synonyms: [], antonyms: [] };
                 }
