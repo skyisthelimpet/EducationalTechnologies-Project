@@ -63,7 +63,7 @@ async function fetchTodaysFact() {
 
 
 async function fetchWordData() {
-    const apiUrl = 'https://api.dictionaryapi.dev/api/v2/entries/en/fork';
+    const apiUrl = 'https://api.dictionaryapi.dev/api/v2/entries/en/hello';
 
     try {
         const response = await fetch(apiUrl);
@@ -72,6 +72,7 @@ async function fetchWordData() {
         }
 
         const data = await response.json();
+        console.log(data)
         displayWordData(data[0]);
     } catch (error) {
         console.error('Error fetching word data:', error);
@@ -84,6 +85,7 @@ function displayWordData(wordData) {
     const definitionElement = document.getElementById('definition');
 
     if (wordElement) {
+        wordElement.textContent.replace('/', ' 0 ')
         wordElement.textContent = wordData.word;
     }
 
@@ -96,7 +98,9 @@ function displayWordData(wordData) {
     }
 }
 
-window.addEventListener('load', fetchWordData);
+
+//! Deprecating this for now
+// window.addEventListener('load', fetchWordData); 
 
 
 
@@ -215,7 +219,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     fullData[word].synonyms.push(synonym);
                 }
 
-                
+
                 if (!fullData[synonym]) {
                     fullData[synonym] = { synonyms: [], antonyms: [] };
                 }
