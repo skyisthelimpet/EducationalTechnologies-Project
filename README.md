@@ -1,1 +1,1 @@
-To visit the site; on mobile click the pages button below, on PC click the same button on the right side.
+To visit the site; https://skyisthelimpet.github.io/EducationalTechnologies-Project/
