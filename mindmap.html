@@ -8,6 +8,7 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./libs/jsmind-master/style/jsmind.css">
 
 </head>
 <body class="h-screen bg-[#0f172a] transition-all overflow-x-hidden w-screen">
@@ -73,55 +74,18 @@
               </svg>
             </button>
 
-                
-
             </div>
 
         </div>
 
-
     </nav>
 
 
-    <div id="main" class=" w-screen font-[libre] lg:grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-20 text-white mx-auto max-w-6xl">
+    <div id="main">
 
-        <a class="flex justify-center" href="./wordcloud.html">
-            <button class="shadow-lg transition-all mx-3 my-3 md:mx-0 md:my-0 hover:translate-y-1 p-5 hover:shadow-slate-700 w-full h-52 bg-slate-800 rounded-xl border-slate-500 border-2">
-                <h1 class=" text-3xl">Word Cloud</h1>
-                <p class="">finding synonyms and antonyms</p>
-            </button>
-        </a>
+        <div id="mindmap_container">
 
-        <a class="flex justify-center" href="./mindmap.html">
-            <button class="shadow-lg transition-all mx-3 my-3 md:mx-0 md:my-0 hover:translate-y-1 p-5 hover:shadow-slate-700 w-full h-52 bg-slate-800 rounded-xl border-slate-500 border-2">
-                <h1 class="text-white font-bold text-3xl">Mind Map Game!</h1>
-            </button>
-        </a>
-
-
-        <a class="flex justify-center" href="./hotPotatoes/index.htm">
-            <button class="shadow-lg transition-all mx-3 my-3 md:mx-0 md:my-0 hover:translate-y-1 p-5 hover:shadow-slate-700 w-full h-52 bg-slate-800 rounded-xl border-slate-500 border-2">
-                <h1 class="text-white font-bold text-3xl">Hot Potatoes</h1>
-            </button>
-        </a>
-
-        <a class="flex justify-center" href="https://create.kahoot.it/share/test/8a2432aa-9348-4c33-a089-eb17eb8b63f3">
-            <button class="shadow-lg transition-all mx-3 my-3 md:mx-0 md:my-0 hover:translate-y-1 p-5 hover:shadow-slate-700 w-full h-52 bg-slate-800 rounded-xl border-slate-500 border-2">
-                <h1 class="text-white text-3xl">Kahoot Quiz!</h1>
-            </button>
-        </a>
-
-        <a class="flex justify-center" href="https://www.gamestolearnenglish.com/">
-            <button class="shadow-lg transition-all mx-3 my-3 md:mx-0 md:my-0 hover:translate-y-1 p-5 hover:shadow-slate-700 w-full h-52 bg-slate-800 rounded-xl border-slate-500 border-2">
-                <h1 class="text-white text-3xl">Online Source for English Games</h1>
-            </button>
-        </a>
-        
-
-
-
-
-
+        </div>
 
     </div>
 
@@ -131,11 +95,12 @@
 
 
 
-
-    <footer class="mt-20 absolute grid font-[lobster] text-white bg-slate-800 rounded-tl-md rounded-tr-md place-content-center bottom-0 w-screen h-10">
+    <footer class="mt-20 grid font-[lobster] text-white bg-slate-800 rounded-tl-md rounded-tr-md place-content-center bottom-0 w-screen h-10">
         <h1 class="tracking-wide">made with ❤️ by <a class="border-b-2  border-blue-500 text-blue-500" href="https://www.instagram.com/damnimessedupwegottagobald_/">me</a> </h1>
     </footer>
 
+    <script src="./libs/jsmind-master/src/jsmind.js" type="module"></script>
+    <script src="./mindmap.js"></script>
     <script src="./script.js"></script> 
 </body>
 </html> 

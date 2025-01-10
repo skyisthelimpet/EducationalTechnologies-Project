@@ -1,0 +1,9 @@
+.config
+.github
+.vscode
+features
+node_modules
+screenshots
+src
+tests
+.gitignore
