@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="./styles.css">
     <link rel="stylesheet" href="./libs/jsmind-master/style/jsmind.css">
 
+    
+
 </head>
 <body class="h-screen bg-[#0f172a] transition-all overflow-x-hidden w-screen">
     
@@ -81,10 +83,24 @@
     </nav>
 
 
-    <div id="main">
+    <div id="main" class="max-w-7xl mx-auto h-screen flex flex-col justify-center">
 
-        <div id="mindmap_container">
+        <div id="mindmap_container" class="w-screen h-screen">
 
+        </div>
+
+        <div id="words_container" class="mt-5 p-4 bg-slate-900 mx-auto">
+            <div draggable="true" class="draggable-word text-white bg-slate-800 hover:bg-slate-700 active:bg-slate-600 cursor-pointer py-2 px-4 rounded-full font-semibold shadow-md transition-all duration-300 transform hover:translate-y-[-2px] active:translate-y-0 mb-3 inline-block" data-node-id="algorithm"> Algorithm </div>
+            <div draggable="true" class="draggable-word text-white bg-slate-800 hover:bg-slate-700 active:bg-slate-600 cursor-pointer py-2 px-4 rounded-full font-semibold shadow-md transition-all duration-300 transform hover:translate-y-[-2px] active:translate-y-0 mb-3 inline-block" data-node-id="narrative"> Narrative </div>
+            <div draggable="true" class="draggable-word text-white bg-slate-800 hover:bg-slate-700 active:bg-slate-600 cursor-pointer py-2 px-4 rounded-full font-semibold shadow-md transition-all duration-300 transform hover:translate-y-[-2px] active:translate-y-0 mb-3 inline-block" data-node-id="strategy"> Strategy </div>
+            <div draggable="true" class="draggable-word text-white bg-slate-800 hover:bg-slate-700 active:bg-slate-600 cursor-pointer py-2 px-4 rounded-full font-semibold shadow-md transition-all duration-300 transform hover:translate-y-[-2px] active:translate-y-0 mb-3 inline-block" data-node-id="immersion"> Immersion </div>
+            <div draggable="true" class="draggable-word text-white bg-slate-800 hover:bg-slate-700 active:bg-slate-600 cursor-pointer py-2 px-4 rounded-full font-semibold shadow-md transition-all duration-300 transform hover:translate-y-[-2px] active:translate-y-0 mb-3 inline-block" data-node-id="avatar"> Avatar </div>
+            <div draggable="true" class="draggable-word text-white bg-slate-800 hover:bg-slate-700 active:bg-slate-600 cursor-pointer py-2 px-4 rounded-full font-semibold shadow-md transition-all duration-300 transform hover:translate-y-[-2px] active:translate-y-0 mb-3 inline-block" data-node-id="level"> Level </div>
+            <div draggable="true" class="draggable-word text-white bg-slate-800 hover:bg-slate-700 active:bg-slate-600 cursor-pointer py-2 px-4 rounded-full font-semibold shadow-md transition-all duration-300 transform hover:translate-y-[-2px] active:translate-y-0 mb-3 inline-block" data-node-id="objective"> Objective </div>
+            <div draggable="true" class="draggable-word text-white bg-slate-800 hover:bg-slate-700 active:bg-slate-600 cursor-pointer py-2 px-4 rounded-full font-semibold shadow-md transition-all duration-300 transform hover:translate-y-[-2px] active:translate-y-0 mb-3 inline-block" data-node-id="challenge"> Challenge </div>
+            <div draggable="true" class="draggable-word text-white bg-slate-800 hover:bg-slate-700 active:bg-slate-600 cursor-pointer py-2 px-4 rounded-full font-semibold shadow-md transition-all duration-300 transform hover:translate-y-[-2px] active:translate-y-0 mb-3 inline-block" data-node-id="feedback"> Feedback </div>
+            <div draggable="true" class="draggable-word text-white bg-slate-800 hover:bg-slate-700 active:bg-slate-600 cursor-pointer py-2 px-4 rounded-full font-semibold shadow-md transition-all duration-300 transform hover:translate-y-[-2px] active:translate-y-0 mb-3 inline-block" data-node-id="interaction"> Interaction </div>
+            
         </div>
 
     </div>
@@ -100,7 +116,7 @@
     </footer>
 
     <script src="./libs/jsmind-master/src/jsmind.js" type="module"></script>
-    <script src="./mindmap.js"></script>
+    <script src="./mindmap.js" type="module"></script>
     <script src="./script.js"></script> 
 </body>
 </html> 
