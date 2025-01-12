@@ -83,47 +83,25 @@
     </nav>
 
 
-    <div id="main" class=" w-screen font-[libre] lg:grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-20 text-white mx-auto max-w-6xl">
-
-        <a class="flex justify-center" href="./wordcloud.html">
-            <button class="shadow-lg transition-all mx-3 my-3 md:mx-0 md:my-0 hover:translate-y-1 p-5 hover:shadow-slate-700 w-full h-52 bg-slate-800 rounded-xl border-slate-500 border-2">
-                <h1 class=" text-3xl">Word Cloud</h1>
-                <p class="">finding synonyms and antonyms</p>
-            </button>
-        </a>
-
-        <a class="flex justify-center" href="./mindmap.html">
-            <button class="shadow-lg transition-all mx-3 my-3 md:mx-0 md:my-0 hover:translate-y-1 p-5 hover:shadow-slate-700 w-full h-52 bg-slate-800 rounded-xl border-slate-500 border-2">
-                <h1 class="text-white font-bold text-3xl">Mind Map Game!</h1>
-            </button>
-        </a>
-        <a class="flex justify-center" href="./comic.html">
-            <button class="shadow-lg transition-all mx-3 my-3 md:mx-0 md:my-0 hover:translate-y-1 p-5 hover:shadow-slate-700 w-full h-52 bg-slate-800 rounded-xl border-slate-500 border-2">
-                <h1 class="text-white font-bold text-3xl">A short comic story!</h1>
-            </button>
-        </a>
+    <div id="main" class="w-screen h-screen flex flex-col justify-center">
 
 
-        <a class="flex justify-center" href="./hotPotatoes/index.htm">
-            <button class="shadow-lg transition-all mx-3 my-3 md:mx-0 md:my-0 hover:translate-y-1 p-5 hover:shadow-slate-700 w-full h-52 bg-slate-800 rounded-xl border-slate-500 border-2">
-                <h1 class="text-white font-bold text-3xl">Hot Potatoes</h1>
-            </button>
-        </a>
+        <div id="content" class="max-w-6xl mx-auto flex flex-col">
 
-        <a class="flex justify-center" href="https://create.kahoot.it/share/test/8a2432aa-9348-4c33-a089-eb17eb8b63f3">
-            <button class="shadow-lg transition-all mx-3 my-3 md:mx-0 md:my-0 hover:translate-y-1 p-5 hover:shadow-slate-700 w-full h-52 bg-slate-800 rounded-xl border-slate-500 border-2">
-                <h1 class="text-white text-3xl">Kahoot Quiz!</h1>
-            </button>
-        </a>
+            <img id="image_comic" class="h-fit mt-5 border-black shadow-lg shadow-slate-600 w-fit mx-auto mb-5" src="./images/comics/panel1.png">
 
-        <a class="flex justify-center" href="https://www.gamestolearnenglish.com/">
-            <button class="shadow-lg transition-all mx-3 my-3 md:mx-0 md:my-0 hover:translate-y-1 p-5 hover:shadow-slate-700 w-full h-52 bg-slate-800 rounded-xl border-slate-500 border-2">
-                <h1 class="text-white text-3xl">Online Source for English Games</h1>
-            </button>
-        </a>
-        
+            <p class="text-slate-400 font-[libre] text-center mb-5">please choose the correct word for each blank</p>
 
 
+            <div id="answers" class="flex flex-row gap-10">
+                <button class="text-slate-200 border border-slate-500 border-b-4 hover:border-b-0 translate-y-1 transition-all text-2xl rounded-lg bg-slate-800 font-[libre] px-10 p-5" onclick="checkAnswer(0)">A) <span id="option0">Tiger</span></button>
+                <button class="text-slate-200 border border-slate-500 border-b-4 hover:border-b-0 translate-y-1 transition-all text-2xl rounded-lg bg-slate-800 font-[libre] px-10 p-5" onclick="checkAnswer(1)">B) <span id="option1">Monster</span></button>
+                <button class="text-slate-200 border border-slate-500 border-b-4 hover:border-b-0 translate-y-1 transition-all text-2xl rounded-lg bg-slate-800 font-[libre] px-10 p-5" onclick="checkAnswer(2)">C) <span id="option2">Bandit</span></button>
+                <button class="text-slate-200 border border-slate-500 border-b-4 hover:border-b-0 translate-y-1 transition-all text-2xl rounded-lg bg-slate-800 font-[libre] px-10 p-5" onclick="checkAnswer(3)">D) <span id="option3">Storm</span></button>
+            </div>
+
+
+        </div>
 
 
 
@@ -137,10 +115,11 @@
 
 
 
-    <footer class="mt-20 absolute grid font-[lobster] text-white bg-slate-800 rounded-tl-md rounded-tr-md place-content-center bottom-0 w-screen h-10">
+    <footer class="mt-20 grid font-[lobster] text-white bg-slate-800 rounded-tl-md rounded-tr-md place-content-center bottom-0 w-screen h-10">
         <h1 class="tracking-wide">made with ❤️ by <a class="border-b-2  border-blue-500 text-blue-500" href="https://www.instagram.com/damnimessedupwegottagobald_/">me</a> </h1>
     </footer>
 
+    <script src="./comic.js"></script>
     <script src="./script.js"></script> 
 </body>
 </html> 
