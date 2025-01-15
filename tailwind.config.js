@@ -4,7 +4,7 @@ module.exports = {
               "./articles/article1.html",
               "./articles/article2.html",
               "./articles/article3.html",
-              "./watch.html", "./notsupported.html", "./mindmap.html", "./comic.html"
+              "./watch.html", "./notsupported.html", "./mindmap.html", "./comic.html", "./resources.html"
   ],
   theme: {
     extend: {},
