@@ -9,7 +9,6 @@
     <!-- CSS -->
     <link rel="stylesheet" href="./styles.css">
     <link rel="stylesheet" href="./libs/jsmind-master/style/jsmind.css">
-
     
 
 </head>
@@ -86,52 +85,74 @@
     </nav>
 
 
-    <div id="main" class="mx-auto font-[libre] h-screen flex flex-col items-center">
+    <div id="main" class="mx-auto font-[libre] flex flex-col items-center">
 
-        <div id="mindmap_container" class="w-full font-[libre] max-w-7xl h-screen">
+        <img src="./images/mindmappp.png" class="mt-10" alt="" srcset="">
 
         </div>
 
-        <div id="feedback" class="font-[libre] mt-4"></div>
-        <div class="text-green-500 hidden font-[libre] mt-4">Correct!</div>
-        <div class="text-red-500 hidden font-[libre] mt-4">Correct!</div>
+        
 
 
-        <p class="font-[libre] text-slate-400">drag these words to correct videogame aspects</p>
+        <p class="font-[libre] text-center text-slate-50">think that you are filling this mindmap, in what topics you would connect these words?</p>
+        <p class="font-[libre] text-center text-slate-400">drag these words to correct videogame aspects</p>
+
+        <div id="feedback" class="font-[libre]"></div>
+        <div class="text-green-500 text-center hidden font-[libre] mt-4">Correct!</div>
+        <div class="text-red-500 text-center hidden font-[libre] mt-4">False!</div>
+
+
+        <div class="flex font-[libre] justify-between text-slate-300 mt-10 w-full px-10">
+            <div id="narrative" class="drop-zone bg-slate-700 border-slate-600 rounded-lg p-5  w-52 h-48 border-2 border-dashed flex items-center justify-center">
+                <span class="text-center">Narrative</span>
+            </div>
+    
+            <div id="design" class="drop-zone bg-slate-700 border-slate-600 rounded-lg p-5 w-52 h-48 border-2 border-dashed  flex items-center justify-center">
+                <span class="text-center">Design</span>
+            </div>
+    
+            <div id="mechanics" class="drop-zone bg-slate-700 border-slate-600 rounded-lg p-5 w-52 h-48 border-2 border-dashed  flex items-center justify-center">
+                <span class="text-center">Mechanics</span>
+            </div>
+    
+            <div id="technology" class="drop-zone bg-slate-700 border-slate-600 rounded-lg p-5 w-52 h-48 border-2 border-dashed   flex items-center justify-center">
+                <span class="text-center">Technology</span>
+            </div>
+        </div>
 
         <div id="words_container" class="mt-5 p-4 max-w-5xl text-center bg-slate-900 mx-auto">
-            <div draggable="true" class="draggable-word text-white bg-slate-800 hover:bg-slate-700 active:bg-slate-600 cursor-pointer py-2 px-4 rounded-full font-semibold shadow-md transition-all duration-300 transform hover:translate-y-[-2px] active:translate-y-0 mb-3 inline-block" data-node-id="mod"> Mod </div>
-            <div draggable="true" class="draggable-word text-white bg-slate-800 hover:bg-slate-700 active:bg-slate-600 cursor-pointer py-2 px-4 rounded-full font-semibold shadow-md transition-all duration-300 transform hover:translate-y-[-2px] active:translate-y-0 mb-3 inline-block" data-node-id="jump"> Jump </div>
-            <div draggable="true" class="draggable-word text-white bg-slate-800 hover:bg-slate-700 active:bg-slate-600 cursor-pointer py-2 px-4 rounded-full font-semibold shadow-md transition-all duration-300 transform hover:translate-y-[-2px] active:translate-y-0 mb-3 inline-block" data-node-id="hero"> Hero </div>
-            <div draggable="true" class="draggable-word text-white bg-slate-800 hover:bg-slate-700 active:bg-slate-600 cursor-pointer py-2 px-4 rounded-full font-semibold shadow-md transition-all duration-300 transform hover:translate-y-[-2px] active:translate-y-0 mb-3 inline-block" data-node-id="enemy"> Enemy </div>
-            <div draggable="true" class="draggable-word text-white bg-slate-800 hover:bg-slate-700 active:bg-slate-600 cursor-pointer py-2 px-4 rounded-full font-semibold shadow-md transition-all duration-300 transform hover:translate-y-[-2px] active:translate-y-0 mb-3 inline-block" data-node-id="adventure"> Adventure </div>
-            <div draggable="true" class="draggable-word text-white bg-slate-800 hover:bg-slate-700 active:bg-slate-600 cursor-pointer py-2 px-4 rounded-full font-semibold shadow-md transition-all duration-300 transform hover:translate-y-[-2px] active:translate-y-0 mb-3 inline-block" data-node-id="mission"> Mission </div>
-            <div draggable="true" class="draggable-word text-white bg-slate-800 hover:bg-slate-700 active:bg-slate-600 cursor-pointer py-2 px-4 rounded-full font-semibold shadow-md transition-all duration-300 transform hover:translate-y-[-2px] active:translate-y-0 mb-3 inline-block" data-node-id="cloud"> Cloud </div>
-            <div draggable="true" class="draggable-word text-white bg-slate-800 hover:bg-slate-700 active:bg-slate-600 cursor-pointer py-2 px-4 rounded-full font-semibold shadow-md transition-all duration-300 transform hover:translate-y-[-2px] active:translate-y-0 mb-3 inline-block" data-node-id="quest"> Quest </div>
-            <div draggable="true" class="draggable-word text-white bg-slate-800 hover:bg-slate-700 active:bg-slate-600 cursor-pointer py-2 px-4 rounded-full font-semibold shadow-md transition-all duration-300 transform hover:translate-y-[-2px] active:translate-y-0 mb-3 inline-block" data-node-id="story"> Story </div>
-            <div draggable="true" class="draggable-word text-white bg-slate-800 hover:bg-slate-700 active:bg-slate-600 cursor-pointer py-2 px-4 rounded-full font-semibold shadow-md transition-all duration-300 transform hover:translate-y-[-2px] active:translate-y-0 mb-3 inline-block" data-node-id="boss-fight"> Boss Fight </div>
-            <div draggable="true" class="draggable-word text-white bg-slate-800 hover:bg-slate-700 active:bg-slate-600 cursor-pointer py-2 px-4 rounded-full font-semibold shadow-md transition-all duration-300 transform hover:translate-y-[-2px] active:translate-y-0 mb-3 inline-block" data-node-id="server"> Server </div>
-            <div draggable="true" class="draggable-word text-white bg-slate-800 hover:bg-slate-700 active:bg-slate-600 cursor-pointer py-2 px-4 rounded-full font-semibold shadow-md transition-all duration-300 transform hover:translate-y-[-2px] active:translate-y-0 mb-3 inline-block" data-node-id="strategy"> Strategy </div>
-            <div draggable="true" class="draggable-word text-white bg-slate-800 hover:bg-slate-700 active:bg-slate-600 cursor-pointer py-2 px-4 rounded-full font-semibold shadow-md transition-all duration-300 transform hover:translate-y-[-2px] active:translate-y-0 mb-3 inline-block" data-node-id="plot-twist"> Plot Twist </div>
-            <div draggable="true" class="draggable-word text-white bg-slate-800 hover:bg-slate-700 active:bg-slate-600 cursor-pointer py-2 px-4 rounded-full font-semibold shadow-md transition-all duration-300 transform hover:translate-y-[-2px] active:translate-y-0 mb-3 inline-block" data-node-id="graphics"> Graphics </div>
-            <div draggable="true" class="draggable-word text-white bg-slate-800 hover:bg-slate-700 active:bg-slate-600 cursor-pointer py-2 px-4 rounded-full font-semibold shadow-md transition-all duration-300 transform hover:translate-y-[-2px] active:translate-y-0 mb-3 inline-block" data-node-id="interface"> Interface </div>
-            <div draggable="true" class="draggable-word text-white bg-slate-800 hover:bg-slate-700 active:bg-slate-600 cursor-pointer py-2 px-4 rounded-full font-semibold shadow-md transition-all duration-300 transform hover:translate-y-[-2px] active:translate-y-0 mb-3 inline-block" data-node-id="controls"> Controls </div>
-            <div draggable="true" class="draggable-word text-white bg-slate-800 hover:bg-slate-700 active:bg-slate-600 cursor-pointer py-2 px-4 rounded-full font-semibold shadow-md transition-all duration-300 transform hover:translate-y-[-2px] active:translate-y-0 mb-3 inline-block" data-node-id="choice"> Choice </div>
-            <div draggable="true" class="draggable-word text-white bg-slate-800 hover:bg-slate-700 active:bg-slate-600 cursor-pointer py-2 px-4 rounded-full font-semibold shadow-md transition-all duration-300 transform hover:translate-y-[-2px] active:translate-y-0 mb-3 inline-block" data-node-id="difficulty"> Difficulty </div>
-            <div draggable="true" class="draggable-word text-white bg-slate-800 hover:bg-slate-700 active:bg-slate-600 cursor-pointer py-2 px-4 rounded-full font-semibold shadow-md transition-all duration-300 transform hover:translate-y-[-2px] active:translate-y-0 mb-3 inline-block" data-node-id="code"> Code </div>
-            <div draggable="true" class="draggable-word text-white bg-slate-800 hover:bg-slate-700 active:bg-slate-600 cursor-pointer py-2 px-4 rounded-full font-semibold shadow-md transition-all duration-300 transform hover:translate-y-[-2px] active:translate-y-0 mb-3 inline-block" data-node-id="soundtrack"> Soundtrack </div>
-            <div draggable="true" class="draggable-word text-white bg-slate-800 hover:bg-slate-700 active:bg-slate-600 cursor-pointer py-2 px-4 rounded-full font-semibold shadow-md transition-all duration-300 transform hover:translate-y-[-2px] active:translate-y-0 mb-3 inline-block" data-node-id="character"> Character </div>
-            <div draggable="true" class="draggable-word text-white bg-slate-800 hover:bg-slate-700 active:bg-slate-600 cursor-pointer py-2 px-4 rounded-full font-semibold shadow-md transition-all duration-300 transform hover:translate-y-[-2px] active:translate-y-0 mb-3 inline-block" data-node-id="map"> Map </div>
-            <div draggable="true" class="draggable-word text-white bg-slate-800 hover:bg-slate-700 active:bg-slate-600 cursor-pointer py-2 px-4 rounded-full font-semibold shadow-md transition-all duration-300 transform hover:translate-y-[-2px] active:translate-y-0 mb-3 inline-block" data-node-id="database"> Database </div>
-            <div draggable="true" class="draggable-word text-white bg-slate-800 hover:bg-slate-700 active:bg-slate-600 cursor-pointer py-2 px-4 rounded-full font-semibold shadow-md transition-all duration-300 transform hover:translate-y-[-2px] active:translate-y-0 mb-3 inline-block" data-node-id="update"> Update </div>
-            <div draggable="true" class="draggable-word text-white bg-slate-800 hover:bg-slate-700 active:bg-slate-600 cursor-pointer py-2 px-4 rounded-full font-semibold shadow-md transition-all duration-300 transform hover:translate-y-[-2px] active:translate-y-0 mb-3 inline-block" data-node-id="avatar"> Avatar </div>
-            <div draggable="true" class="draggable-word text-white bg-slate-800 hover:bg-slate-700 active:bg-slate-600 cursor-pointer py-2 px-4 rounded-full font-semibold shadow-md transition-all duration-300 transform hover:translate-y-[-2px] active:translate-y-0 mb-3 inline-block" data-node-id="villain"> Villain </div>
-            <div draggable="true" class="draggable-word text-white bg-slate-800 hover:bg-slate-700 active:bg-slate-600 cursor-pointer py-2 px-4 rounded-full font-semibold shadow-md transition-all duration-300 transform hover:translate-y-[-2px] active:translate-y-0 mb-3 inline-block" data-node-id="level-up"> Level-Up </div>
-            <div draggable="true" class="draggable-word text-white bg-slate-800 hover:bg-slate-700 active:bg-slate-600 cursor-pointer py-2 px-4 rounded-full font-semibold shadow-md transition-all duration-300 transform hover:translate-y-[-2px] active:translate-y-0 mb-3 inline-block" data-node-id="user-experience"> User Experience </div>
-            <div draggable="true" class="draggable-word text-white bg-slate-800 hover:bg-slate-700 active:bg-slate-600 cursor-pointer py-2 px-4 rounded-full font-semibold shadow-md transition-all duration-300 transform hover:translate-y-[-2px] active:translate-y-0 mb-3 inline-block" data-node-id="engine"> Engine </div>
-            <div draggable="true" class="draggable-word text-white bg-slate-800 hover:bg-slate-700 active:bg-slate-600 cursor-pointer py-2 px-4 rounded-full font-semibold shadow-md transition-all duration-300 transform hover:translate-y-[-2px] active:translate-y-0 mb-3 inline-block" data-node-id="visuals"> Visuals </div>
-            <div draggable="true" class="draggable-word text-white bg-slate-800 hover:bg-slate-700 active:bg-slate-600 cursor-pointer py-2 px-4 rounded-full font-semibold shadow-md transition-all duration-300 transform hover:translate-y-[-2px] active:translate-y-0 mb-3 inline-block" data-node-id="dialogue"> Dialogue </div>
-            <div draggable="true" class="draggable-word text-white bg-slate-800 hover:bg-slate-700 active:bg-slate-600 cursor-pointer py-2 px-4 rounded-full font-semibold shadow-md transition-all duration-300 transform hover:translate-y-[-2px] active:translate-y-0 mb-3 inline-block" data-node-id="power-up"> Power-Up </div>
+            <div draggable="true" class="draggable-word text-white bg-slate-800 hover:bg-slate-700 active:bg-slate-600 cursor-pointer py-2 px-4 rounded-full font-semibold shadow-md transition-all duration-300 transform hover:translate-y-[-2px] active:translate-y-0 mb-3 inline-block" id="narrative"> Mod </div>
+            <div draggable="true" class="draggable-word text-white bg-slate-800 hover:bg-slate-700 active:bg-slate-600 cursor-pointer py-2 px-4 rounded-full font-semibold shadow-md transition-all duration-300 transform hover:translate-y-[-2px] active:translate-y-0 mb-3 inline-block" id="jump"> Jump </div>
+            <div draggable="true" class="draggable-word text-white bg-slate-800 hover:bg-slate-700 active:bg-slate-600 cursor-pointer py-2 px-4 rounded-full font-semibold shadow-md transition-all duration-300 transform hover:translate-y-[-2px] active:translate-y-0 mb-3 inline-block" id="hero"> Hero </div>
+            <div draggable="true" class="draggable-word text-white bg-slate-800 hover:bg-slate-700 active:bg-slate-600 cursor-pointer py-2 px-4 rounded-full font-semibold shadow-md transition-all duration-300 transform hover:translate-y-[-2px] active:translate-y-0 mb-3 inline-block" id="enemy"> Enemy </div>
+            <div draggable="true" class="draggable-word text-white bg-slate-800 hover:bg-slate-700 active:bg-slate-600 cursor-pointer py-2 px-4 rounded-full font-semibold shadow-md transition-all duration-300 transform hover:translate-y-[-2px] active:translate-y-0 mb-3 inline-block" id="adventure"> Adventure </div>
+            <div draggable="true" class="draggable-word text-white bg-slate-800 hover:bg-slate-700 active:bg-slate-600 cursor-pointer py-2 px-4 rounded-full font-semibold shadow-md transition-all duration-300 transform hover:translate-y-[-2px] active:translate-y-0 mb-3 inline-block" id="mission"> Mission </div>
+            <div draggable="true" class="draggable-word text-white bg-slate-800 hover:bg-slate-700 active:bg-slate-600 cursor-pointer py-2 px-4 rounded-full font-semibold shadow-md transition-all duration-300 transform hover:translate-y-[-2px] active:translate-y-0 mb-3 inline-block" id="cloud"> Cloud </div>
+            <div draggable="true" class="draggable-word text-white bg-slate-800 hover:bg-slate-700 active:bg-slate-600 cursor-pointer py-2 px-4 rounded-full font-semibold shadow-md transition-all duration-300 transform hover:translate-y-[-2px] active:translate-y-0 mb-3 inline-block" id="quest"> Quest </div>
+            <div draggable="true" class="draggable-word text-white bg-slate-800 hover:bg-slate-700 active:bg-slate-600 cursor-pointer py-2 px-4 rounded-full font-semibold shadow-md transition-all duration-300 transform hover:translate-y-[-2px] active:translate-y-0 mb-3 inline-block" id="story"> Story </div>
+            <div draggable="true" class="draggable-word text-white bg-slate-800 hover:bg-slate-700 active:bg-slate-600 cursor-pointer py-2 px-4 rounded-full font-semibold shadow-md transition-all duration-300 transform hover:translate-y-[-2px] active:translate-y-0 mb-3 inline-block" id="boss-fight"> Boss Fight </div>
+            <div draggable="true" class="draggable-word text-white bg-slate-800 hover:bg-slate-700 active:bg-slate-600 cursor-pointer py-2 px-4 rounded-full font-semibold shadow-md transition-all duration-300 transform hover:translate-y-[-2px] active:translate-y-0 mb-3 inline-block" id="server"> Server </div>
+            <div draggable="true" class="draggable-word text-white bg-slate-800 hover:bg-slate-700 active:bg-slate-600 cursor-pointer py-2 px-4 rounded-full font-semibold shadow-md transition-all duration-300 transform hover:translate-y-[-2px] active:translate-y-0 mb-3 inline-block" id="strategy"> Strategy </div>
+            <div draggable="true" class="draggable-word text-white bg-slate-800 hover:bg-slate-700 active:bg-slate-600 cursor-pointer py-2 px-4 rounded-full font-semibold shadow-md transition-all duration-300 transform hover:translate-y-[-2px] active:translate-y-0 mb-3 inline-block" id="plot-twist"> Plot Twist </div>
+            <div draggable="true" class="draggable-word text-white bg-slate-800 hover:bg-slate-700 active:bg-slate-600 cursor-pointer py-2 px-4 rounded-full font-semibold shadow-md transition-all duration-300 transform hover:translate-y-[-2px] active:translate-y-0 mb-3 inline-block" id="graphics"> Graphics </div>
+            <div draggable="true" class="draggable-word text-white bg-slate-800 hover:bg-slate-700 active:bg-slate-600 cursor-pointer py-2 px-4 rounded-full font-semibold shadow-md transition-all duration-300 transform hover:translate-y-[-2px] active:translate-y-0 mb-3 inline-block" id="interface"> Interface </div>
+            <div draggable="true" class="draggable-word text-white bg-slate-800 hover:bg-slate-700 active:bg-slate-600 cursor-pointer py-2 px-4 rounded-full font-semibold shadow-md transition-all duration-300 transform hover:translate-y-[-2px] active:translate-y-0 mb-3 inline-block" id="controls"> Controls </div>
+            <div draggable="true" class="draggable-word text-white bg-slate-800 hover:bg-slate-700 active:bg-slate-600 cursor-pointer py-2 px-4 rounded-full font-semibold shadow-md transition-all duration-300 transform hover:translate-y-[-2px] active:translate-y-0 mb-3 inline-block" id="choice"> Choice </div>
+            <div draggable="true" class="draggable-word text-white bg-slate-800 hover:bg-slate-700 active:bg-slate-600 cursor-pointer py-2 px-4 rounded-full font-semibold shadow-md transition-all duration-300 transform hover:translate-y-[-2px] active:translate-y-0 mb-3 inline-block" id="difficulty"> Difficulty </div>
+            <div draggable="true" class="draggable-word text-white bg-slate-800 hover:bg-slate-700 active:bg-slate-600 cursor-pointer py-2 px-4 rounded-full font-semibold shadow-md transition-all duration-300 transform hover:translate-y-[-2px] active:translate-y-0 mb-3 inline-block" id="code"> Code </div>
+            <div draggable="true" class="draggable-word text-white bg-slate-800 hover:bg-slate-700 active:bg-slate-600 cursor-pointer py-2 px-4 rounded-full font-semibold shadow-md transition-all duration-300 transform hover:translate-y-[-2px] active:translate-y-0 mb-3 inline-block" id="soundtrack"> Soundtrack </div>
+            <div draggable="true" class="draggable-word text-white bg-slate-800 hover:bg-slate-700 active:bg-slate-600 cursor-pointer py-2 px-4 rounded-full font-semibold shadow-md transition-all duration-300 transform hover:translate-y-[-2px] active:translate-y-0 mb-3 inline-block" id="character"> Character </div>
+            <div draggable="true" class="draggable-word text-white bg-slate-800 hover:bg-slate-700 active:bg-slate-600 cursor-pointer py-2 px-4 rounded-full font-semibold shadow-md transition-all duration-300 transform hover:translate-y-[-2px] active:translate-y-0 mb-3 inline-block" id="map"> Map </div>
+            <div draggable="true" class="draggable-word text-white bg-slate-800 hover:bg-slate-700 active:bg-slate-600 cursor-pointer py-2 px-4 rounded-full font-semibold shadow-md transition-all duration-300 transform hover:translate-y-[-2px] active:translate-y-0 mb-3 inline-block" id="database"> Database </div>
+            <div draggable="true" class="draggable-word text-white bg-slate-800 hover:bg-slate-700 active:bg-slate-600 cursor-pointer py-2 px-4 rounded-full font-semibold shadow-md transition-all duration-300 transform hover:translate-y-[-2px] active:translate-y-0 mb-3 inline-block" id="update"> Update </div>
+            <div draggable="true" class="draggable-word text-white bg-slate-800 hover:bg-slate-700 active:bg-slate-600 cursor-pointer py-2 px-4 rounded-full font-semibold shadow-md transition-all duration-300 transform hover:translate-y-[-2px] active:translate-y-0 mb-3 inline-block" id="avatar"> Avatar </div>
+            <div draggable="true" class="draggable-word text-white bg-slate-800 hover:bg-slate-700 active:bg-slate-600 cursor-pointer py-2 px-4 rounded-full font-semibold shadow-md transition-all duration-300 transform hover:translate-y-[-2px] active:translate-y-0 mb-3 inline-block" id="villain"> Villain </div>
+            <div draggable="true" class="draggable-word text-white bg-slate-800 hover:bg-slate-700 active:bg-slate-600 cursor-pointer py-2 px-4 rounded-full font-semibold shadow-md transition-all duration-300 transform hover:translate-y-[-2px] active:translate-y-0 mb-3 inline-block" id="level-up"> Level-Up </div>
+            <div draggable="true" class="draggable-word text-white bg-slate-800 hover:bg-slate-700 active:bg-slate-600 cursor-pointer py-2 px-4 rounded-full font-semibold shadow-md transition-all duration-300 transform hover:translate-y-[-2px] active:translate-y-0 mb-3 inline-block" id="user-experience"> User Experience </div>
+            <div draggable="true" class="draggable-word text-white bg-slate-800 hover:bg-slate-700 active:bg-slate-600 cursor-pointer py-2 px-4 rounded-full font-semibold shadow-md transition-all duration-300 transform hover:translate-y-[-2px] active:translate-y-0 mb-3 inline-block" id="engine"> Engine </div>
+            <div draggable="true" class="draggable-word text-white bg-slate-800 hover:bg-slate-700 active:bg-slate-600 cursor-pointer py-2 px-4 rounded-full font-semibold shadow-md transition-all duration-300 transform hover:translate-y-[-2px] active:translate-y-0 mb-3 inline-block" id="visuals"> Visuals </div>
+            <div draggable="true" class="draggable-word text-white bg-slate-800 hover:bg-slate-700 active:bg-slate-600 cursor-pointer py-2 px-4 rounded-full font-semibold shadow-md transition-all duration-300 transform hover:translate-y-[-2px] active:translate-y-0 mb-3 inline-block" id="dialogue"> Dialogue </div>
+            <div draggable="true" class="draggable-word text-white bg-slate-800 hover:bg-slate-700 active:bg-slate-600 cursor-pointer py-2 px-4 rounded-full font-semibold shadow-md transition-all duration-300 transform hover:translate-y-[-2px] active:translate-y-0 mb-3 inline-block" id="power-up"> Power-Up </div>
         </div>
 
     </div>
@@ -146,8 +167,7 @@
         <h1 class="tracking-wide">made with ❤️ by <a class="border-b-2  border-blue-500 text-blue-500" href="https://www.instagram.com/damnimessedupwegottagobald_/">me</a> </h1>
     </footer>
 
-    <script src="./libs/jsmind-master/src/jsmind.js" type="module"></script>
-    <script src="./mindmap.js" type="module"></script>
+    <script src="./mindmap.js"></script>
     <script src="./script.js"></script> 
 </body>
 </html> 
